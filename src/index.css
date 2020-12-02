@@ -11,3 +11,65 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+#root>div{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.Navigation{
+  background: antiquewhite;
+  width: 100%;
+  height: 100px;
+  position: fixed;
+}
+.Navigation div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.Navigation div a,.Navigation div button{
+  background: burlywood;
+  color: black;
+  padding: 15px 30px;
+  border-radius: 25px;
+  margin-top: 25px;
+
+}
+.Navigation div a:hover,.Navigation div button:hover{
+  background: #dea660;
+}
+.content{
+  background: #dea660;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 100px;
+}
+.content>div{
+  width: 20%;
+  margin: auto;
+  text-align: center;
+}
+.content form{
+  display: flex;
+  flex-direction: column;
+}
+input{
+  padding: 10px 20px;
+  border-radius: 3px;
+  border: none;
+  margin: 5px;
+  outline-width: thin;
+}
+button{
+  padding: 10px 20px;
+  border-radius: 3px;
+  border: none;
+  margin: 5px;
+  background: aliceblue;
+  cursor: pointer;
+}
+button:hover{
+  background: antiquewhite;
+}
+

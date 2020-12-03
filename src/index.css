@@ -1,15 +1,15 @@
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  monospace;
 }
 #root>div{
   width: 100%;
@@ -17,7 +17,8 @@ code {
   position: absolute;
 }
 .Navigation{
-  background: antiquewhite;
+  background: #525261;
+  box-shadow:0 1px 6px 0 #2d2d35;
   width: 100%;
   height: 100px;
   position: fixed;
@@ -28,18 +29,19 @@ code {
   justify-content: space-around;
 }
 .Navigation div a,.Navigation div button{
-  background: burlywood;
-  color: black;
+  background: #525261;
+  color: #ffffff;
+  box-shadow:0 1px 6px 0 #2d2d35;
   padding: 15px 30px;
   border-radius: 25px;
   margin-top: 25px;
 
 }
 .Navigation div a:hover,.Navigation div button:hover{
-  background: #dea660;
+  background: #2d2d35;
 }
 .content{
-  background: #dea660;
+  background: #b3cdda;
   width: 100%;
   height: 100%;
   position: fixed;
@@ -66,10 +68,9 @@ button{
   border-radius: 3px;
   border: none;
   margin: 5px;
-  background: aliceblue;
+  background: #b7bdc2;
   cursor: pointer;
 }
 button:hover{
   background: antiquewhite;
 }
-

@@ -4,10 +4,10 @@ import { withFirebase } from '../Firebase';
 
 class AdminPage extends Component {
     constructor(props) {
-        super(props);
+                super(props);
 
-        this.state = {
-            loading: false,
+                this.state = {
+                    loading: false,
             users: [],
         };
     }

@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+:root {
+    font-size: 60%;
+
+    --color-background: #f0f0f7;
+    --radius: 6px;
+    --spacing: 8px;
+    --shadow: 0 1px 6px 0 #DCDEE3;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+
+}
+
+html, body, #root {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: var(--color-background);
+}
+
+#root {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body,
+input,
+button,
+textarea {
+    font: 500 1.6rem Poppins;
+}
+
+.container {
+    width: 100%;
+    max-width: 768px;
+    padding: calc(var(--spacing) * 2) 0;
+    margin: calc(var(--spacing) * 2) auto;
+    background: #f3f3f3;
+    border-radius: var(--radius);
+}
+
+#app {
+    margin: 0 auto;
+    width: 70%;
+}
+
+textarea {
+    margin: 0 auto calc(var(--spacing) * 2);
+    display: block;
+    width: 100%;
+    padding: var(--spacing);
+    font-size: 14px;
+    box-sizing: border-box;
+    font-family: inherit;
+    resize: none;
+    outline: none;
+    border: none;
+    box-shadow: var(--shadow);
+    border-radius: var(--radius);
+}
+
+.btn--submit {
+    display: block;
+    margin: 0 auto calc(var(--spacing) * 2);
+    border-radius: var(--radius);
+    padding: var(--spacing) calc(var(--spacing) * 1.5);
+    background: #5096B2;
+    font-family: inherit;
+    text-transform: uppercase;
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.btn--submit:hover {
+    background: #274955;
+}
+
+.message__container {
+    display: flex;
+    position: relative;
+    max-width: 50%;
+    min-height: 40px;
+    padding: 0.75rem;
+    border-radius: 15px 15px 15px 1px;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: normal;
+    box-shadow:0 1px 6px 0 #2d2d35;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 5px;
+    flex-direction: column;
+    background: #5FBFCE;
+}
+
+.timeStamp {
+    font-style: italic;
+    font-size: 10px;
+    margin-left: 10px;
+}
+
+.textbox {
+    width: 60% !important;
+    display: flex;
+    flex-direction: row;
+}
+
+.messagebox {
+    display: flex;
+    height: 80%;
+    padding: 1rem;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background-color: #f0f0f7;
+    flex-direction: column-reverse;
+    overflow-y: auto;
+    width: 60% !important;
+}
+
+.messagebox ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.userLogged {
+    display: flex;
+    justify-content: flex-end;
+}
+.message__container .user{
+    text-align: initial;
+    font-size: 12px;
+    font-weight: bold;
+}
+.userLogged .message__container{
+    background: #68ce5f;
+    border-radius: 15px 15px 1px 15px;
+}
+
+.massageitem {
+    padding: 1rem 0 0 0;
+    opacity: 0;
+    transition: all 0.15s ease-in-out;
+    animation: fadeNewMessage 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.massageAvatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    image-rendering: -webkit-optimize-contrast;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}

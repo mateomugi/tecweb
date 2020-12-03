@@ -10,6 +10,5 @@ Os criadores são:
 
 ### Victor Gomes Lamers
 
-### Allyson Dunk
 
 
